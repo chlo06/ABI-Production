@@ -7,61 +7,73 @@
   </head>
   <body>
     <header>
-        <h1>Active Bretagne Informatique</h1> 
-            <button>Login</button> <button>Logout</button>
-    
-      <nav>
-        Customer list / Add new customer / Collaborator list / Update
-        collaborator data / Create project / Consulting project
-      </nav>
+      <h1>Active Bretagne Informatique</h1>
+      <p>The IT Services & Engineering Company</p>
+
+      <label for="pseudo"> login : </label>
+      <input type="text" name="pseudo" id="pseudo" /><br />
+
+      <label for="mdp"> Mot de passe :</label>
+      <input type="text" name="pseudo" id="pseudo" /><br />
+
+<select>
+    <option>Customer list</option>
+    <option>Add new customer</option>
+    <option>Collaborator list</option>
+    <option>Update collaborator data</option>
+</select>
     </header>
 
-    <h2>Update collaborator data</h2>
+<h2>Update collaborator data</h2>
 
-    <table>
-      <tr>
-        Number:
-        <textarea></textarea>
-      </tr>
-      <tr>
-        Photo:
-      </tr>
-      <br />
-      <tr>
-        First Name:
-        <textarea></textarea>
-      </tr>
-      <tr>
-        Last Name:
-        <textarea></textarea>
-      </tr>
-      <br />
-      <tr>
-        Contrat:
-        <textarea></textarea>
-      </tr>
-      <tr>
-        Salary:
-        <textarea></textarea>
-      </tr>
-      <br />
-      <tr>
-        Hiring Date:
-        <textarea></textarea>
-      </tr>
-      <tr>
-        Qualification:
-        <textarea></textarea>
-      </tr>
-      <br />
-      <tr>
-        End contrat date:
-        <textarea></textarea>
-      </tr>
-      <br></br>
-      <button>save</button>
-      <button>Exit</button> 
-    </table>
-    <footer><button>Legal notice</button> <button>Contact us</button></footer>
+<form>
+  <fieldset>
+    <div class="champ">
+        <label for="registrationNumber">Registration number : </label>
+        <input type="text" name="registrationNumber" id="registrationNumber" size="15"  maxlength="15"/>
+    </div>
+
+    <div class="champ">
+        <label for="firstName">First name : </label>
+        <input type="text" name="firstName" id="firstName" size="15" maxlength="15"/>
+    </div>
+
+    <div class="champ">
+        <label for="lastName">last name : </label>
+        <input type="text" name="lastName" id="lastName" size="15" maxlength="15"/>
+    </div>
+
+    <div class="champ">
+        <label for="contrat">Contrat : </label>
+        <input type="text" name="contrat" id="contrat" size="15" maxlength="15"/>
+    </div>
+
+    <div class="champ">
+        <label for="qualification">Qualification : </label>
+        <input type="text" name="qualification" id="qualification" size="15" maxlength="15"/>
+    </div>
+
+    <div class="champ">
+        <label for="salary">Salary : </label>
+        <input type="text" name="salary" id="salary" size="15" maxlength="15"/>
+    </div>
+
+    <div class="champ">
+        <label for="hiringDate">Hiring date : </label>
+        <input type="text" name="hiringDate" id="hiringDate" size="15" maxlength="15"/>
+    </div>
+
+    <div class="champ">
+        <label for="endCantratDate">End contrat date : </label>
+        <input type="text" name="endCantratDate" id="endCantratDate" size="15" maxlength="15" />
+    </div>
+  </fieldset>
+</form>
+
+    <button>save</button>
+    <button>Exit</button>
+<br><br />
+
+<footer><button>Legal notice</button> <button>Contact us</button></footer>
   </body>
 </html>
