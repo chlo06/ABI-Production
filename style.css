@@ -66,3 +66,7 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+homePic{
+    display: flex;
+    justify-content: center;
+}
