@@ -12,6 +12,9 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.logInOut {
+    text-align: right;
+}
 #logo {
 width: 300px;
 margin: auto;
@@ -45,6 +48,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     font-family:georgia, serif;
+
 }
 .class4{
     display: flex;
@@ -53,8 +57,7 @@ h2 {
 }
 
 .saveExit {
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     font-family:georgia, serif;
 }
 
