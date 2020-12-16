@@ -1,6 +1,6 @@
 const form1 = document.querySelector('#myForm').addEventListener("save",(e)=>{
     e.preventDefault();
-    const staffList = [];
+    const staff = [];
     const registrationNumber = document.getElementById("clientNumber").value;
     const contrat = document.getElementById("contrat").value;
     const firstName = document.getElementById("firstName").value;
@@ -10,15 +10,17 @@ const form1 = document.querySelector('#myForm').addEventListener("save",(e)=>{
     const hiringDate = document.getElementById("hiringDate").value;
     const endContratDate = document.getElementById("endContratDate").value;
     
-    staffList.push(registrationNumber);
-    staffList.push(contrat);
-    staffList.push(firstName);
-    staffList.push(lastName);
-    staffList.push(qualification);
-    staffList.push(salary);
-    staffList.push(hiringDate);
-    staffList.push(endContratDate);
 
+    staff.push ({
+        registrationNumber,
+        contrat,
+        firstName,
+        lastName,
+        qualification,
+        salary,
+        hiringDate,
+        endContratDate,
+    })
 
     console.log(registrationNumber)
     console.log(contrat)
@@ -29,8 +31,6 @@ const form1 = document.querySelector('#myForm').addEventListener("save",(e)=>{
     console.log(hiringDate)
     console.log(endContratDate)
 
-    console.log(staffList)
+    console.log(staff)
 })
 
-//localStorage.setItem(staffList);
-//let test = localStorage.getItem (staffList);
