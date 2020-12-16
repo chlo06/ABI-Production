@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css"/>
+    <script src="./main.js"></script>
     <title>Update staff data</title>
   </head>
   <body>
@@ -32,14 +33,14 @@
     <ul>
         <li><a href="./index.html">Customer list</a></li>
         <li><a href="./addnewcustomer.html">Add new customer</a></li>
-        <li><a href="./staffData.html">Staff data</a></li>
-        <li><a href="./index.html">Update staff data</a></li>
+        <li><a href="./staffList.html">Staff list</a></li>
+        <li><a href="./staffData.html">Update staff data</a></li>
     </ul>
 </nav><br />
 
 <h2> Update collaborator data </h2><br />
 
-<form>
+<form id="myForm">
   <div class="collab">
     <div class="class1">
         <label for="registrationNumber">Registration number : </label>
@@ -72,6 +73,7 @@
         <label for="endCantratDate">End contrat date : </label>
         <input type="text" name="endCantratDate" id="endCantratDate" size="15" maxlength="15" />
     </div><br />
+
 </div>
     <div class="saveExit">
         <button> Save </button>
