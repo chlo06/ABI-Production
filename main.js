@@ -1,4 +1,4 @@
-document.getElementById("myForm").addEventListener("save",(e) => {
+const form1 = document.querySelector('#myForm').addEventListener("save",(e)=>{
     e.preventDefault();
     const staffList = [];
     const registrationNumber = document.getElementById("clientNumber").value;
