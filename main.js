@@ -1,10 +1,6 @@
-document.getElementById("form").addEventListener("save",(e) => {
+document.getElementById("myForm").addEventListener("save",(e) => {
     e.preventDefault();
     const staffList = [];
-    let staff = '';
-    const mbody = document.getElementById("newStaff");
-    const tr = document.createElement ('tr');
-    const td = [];
     const registrationNumber = document.getElementById("clientNumber").value;
     const contrat = document.getElementById("contrat").value;
     const firstName = document.getElementById("firstName").value;
@@ -23,12 +19,6 @@ document.getElementById("form").addEventListener("save",(e) => {
     staffList.push(hiringDate);
     staffList.push(endContratDate);
 
-    tbody.appendChild(tr);
-    for(let i =0; i<staffList.length; i++){
-        td[i] = document.createElement ('td');
-        tr.appendChild (td[i]);
-        td[i].innerHTML = staffList[i];
-    }
 
     console.log(registrationNumber)
     console.log(contrat)
@@ -41,3 +31,6 @@ document.getElementById("form").addEventListener("save",(e) => {
 
     console.log(staffList)
 })
+
+//localStorage.setItem(staffList);
+//let test = localStorage.getItem (staffList);
